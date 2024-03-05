@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+const carros_vendidos = Number( prompt("Digite a quantidade de carros vendidos"));
+const valor_carro = Number( prompt("Digite o valor do carro"));
+const comissao_carros = Number( prompt("Qual o valor da comissão por cada carro vendido?"));
+const valor_vendas = (carros_vendidos * valor_carro) * comissao_carros/100
+const salario_fixo = Number( prompt("Digite o valor do salário fixo"));
+const valor_carro_vendido = valor_vendas * 0.05;
+
+const salario =  valor_vendas + salario_fixo + valor_carro_vendido
+
+console.log("Este é o salario final do vendedor: " + salario)
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

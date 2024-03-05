@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+
+    <script>
+
+      const custo_fabrica = Number( prompt("Digite o valor de fábrica do carro"));
+      const distribuidor = Number( prompt("Digite o valor da porcentagem do distribuidor"))/100;
+      const imposto = Number( prompt("Digite o valor da porcentagem do imposto"))/100;
+      const custo_consumidor = custo_fabrica + (distribuidor * custo_fabrica) + (imposto * custo_fabrica);
+
+      console.log("O custo final para o consumidor será de: " + custo_consumidor);
+      console.log("O valor do distribuidor será de : " + distribuidor * custo_fabrica);
+      console.log("O valor dos impostos será de: " + imposto * custo_fabrica);
+      
+    </script>
+  </head>
+  <body></body>
 </html>

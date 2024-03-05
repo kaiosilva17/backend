@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-<script>
+    <script>
 
-const salario = Number(prompt("Digite o valor do salario"))
-const reajuste = Number(prompt("Digite o valor do reajuste"))
+      const salario = Number(prompt("Digite o valor do salario"));
+      const reajuste = Number(prompt("Digite o valor do reajuste"));
 
-const valor = salario * reajuste / 100
+      const salario_final = salario + (salario * reajuste) / 100;
+      const reajuste_valor = (salario * reajuste) / 100;
 
-</script>
-
-</head>
-<body>
-    
-</body>
+      console.log("O salario com o reajuste é: " + salario_final);
+      console.log("Valor do reajuste : " + reajuste_valor);
+      
+    </script>
+  </head>
+  <body></body>
 </html>
